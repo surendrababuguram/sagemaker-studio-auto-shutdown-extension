@@ -39,7 +39,7 @@ const extension: JupyterFrontEndPlugin<void> = {
     stateDB: IStateDB,) => {
     console.log('JupyterLab extension sagemaker-studio-autoshutdown is activated!');
 
-    let IDLE_TIME = 120
+    let IDLE_TIME = 30
     let KEEP_TERMINALS = false
     const KEY = 'sagemaker-auto-shutdown:settings:data';
 
